@@ -1,0 +1,45 @@
+.footer {
+  background: #2e2f42;
+  color: #f4f4fd;
+  padding: 100px 0;
+}
+
+.footer-text {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  max-width: 264px;
+}
+
+.footer .logo {
+  color: #f4f4fd;
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.footer .container {
+  display: flex;
+}
+
+.footer-wrapper {
+  margin-right: 120px;
+}
+
+.footer .logo {
+  margin-bottom: 16px;
+}
+
+.footer-socials-caption {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+  color: #fff;
+}
+
+.footer .card-socials-list {
+  gap: 16px;
+}
+.footer .card-socials-icon:hover,
+.footer .card-socials-icon:focus {
+  background-color: #31d0aa;
+}
