@@ -20,6 +20,7 @@
 }
 
 .modal {
+  position: relative;
   border-radius: 4px;
   padding: 72px 24px 24px;
   max-width: 408px;
@@ -36,4 +37,61 @@
     0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
+}
+
+.modal-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 24px;
+  width: 24px;
+  height: 24px;
+  background-color: #e7e9fc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition:
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  background-color: #404bbf;
+  border-color: #404bbf;
+  color: #fff;
+}
+
+.modal-icon-btn {
+}
+.modal-caption {
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  width: 100%;
+  text-align: center;
+}
+.modal-form {
+}
+.modal-form-field {
+}
+.modal-form-label {
+}
+.modal-form-wrapper {
+}
+.modal-form-input {
+}
+.modal-form-icon {
+}
+.modal-form-comment {
+}
+.modal-form-policy {
+}
+.modal-form-checkbox {
+}
+.modal-form-checkbox-icon {
+}
+.modal-form-link {
 }
