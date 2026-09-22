@@ -504,7 +504,7 @@
 
     <!-- Backdrop -->
 
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <button class="modal-btn" type="button" aria-label="Close modal button">
           <svg class="modal-icon-btn" width="8" height="8">
@@ -566,7 +566,7 @@
             <label class="modal-form-label" for="user-comment">Comment</label>
 
             <textarea
-              class="modal-form-comment"
+              class="modal-form-comment modal-form-input"
               name="user-comment"
               id="user-comment"
               placeholder="Text input"
@@ -574,17 +574,24 @@
           </div>
 
           <div class="modal-form-field">
-            <input type="checkbox" name="user-policy" id="user-policy" />
+            <input
+              class="modal-form-policy-input sr-only"
+              type="checkbox"
+              name="user-policy"
+              id="user-policy"
+            />
             <label class="modal-form-policy" for="user-policy">
               <span class="modal-form-checkbox">
                 <svg class="modal-form-checkbox-icon" width="10" height="8">
                   <use href="./images/icons.svg#check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
+              <span class="modal-form-policy-text"
+                >I accept the terms and conditions of the</span
+              >
               <a
                 class="modal-form-link"
-                href="http://"
+                href="#"
                 target="_blank"
                 rel="noopener noreferrer"
                 >Privacy Policy</a
