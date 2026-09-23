@@ -11,12 +11,14 @@
   align-items: center;
   opacity: 0;
   pointer-events: none;
+  visibility: hidden;
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal.is-open {
   opacity: 1;
   pointer-events: auto;
+  visibility: visible;
 }
 
 .modal-wrapper {
@@ -47,6 +49,7 @@
   border-radius: 24px;
   width: 24px;
   height: 24px;
+  color: #2e2f42;
   background-color: #e7e9fc;
   display: flex;
   align-items: center;
@@ -75,8 +78,13 @@
 }
 .modal-form {
 }
+
 .modal-form-field {
   margin-bottom: 8px;
+}
+
+.modal-form-field:last-of-type {
+  margin-bottom: 24px;
 }
 
 .modal-form-label {
@@ -87,12 +95,18 @@
   color: #8e8f99;
   margin-bottom: 4px;
 }
+
+#comment-wrapper {
+  margin-bottom: 16px;
+}
+
 .modal-form-wrapper {
   position: relative;
 }
 .modal-form-input {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
+  background-color: transparent;
   padding: 8px 38px;
   width: 100%;
   max-width: 360px;
@@ -113,14 +127,14 @@
   position: absolute;
   top: 8px;
   left: 16px;
+  color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-form-comment {
   padding-left: 16px;
-  margin-bottom: 8px;
   height: 120px;
-  color: #434445;
+  color: #434455;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -146,20 +160,18 @@
   padding: 4px 3px;
   border: 0.88px solid rgba(46, 47, 66, 0.4);
   width: 16px;
-  height: 7px;
+  height: 16px;
   border-radius: 2px;
   margin-right: 8px;
   cursor: pointer;
   transition:
     border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    height 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .checkbox:checked + .modal-form-policy > .modal-form-checkbox {
   border-color: transparent;
   background-color: #404bbf;
-  height: 16px;
 }
 
 .checkbox:focus-visible + .modal-form-policy > .modal-form-checkbox {
@@ -192,7 +204,7 @@
 .modal-form-link {
   color: #4d5ae5;
   font-size: 12px;
-  line-height: 1.33;
+  line-height: 1.17;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
