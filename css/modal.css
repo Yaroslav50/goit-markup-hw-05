@@ -104,6 +104,9 @@
   position: relative;
 }
 .modal-form-input {
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: #434455;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   background-color: transparent;
@@ -125,7 +128,8 @@
 
 .modal-form-icon {
   position: absolute;
-  top: 8px;
+  top: 50%;
+  transform: translateY(-50%);
   left: 16px;
   color: #2e2f42;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
